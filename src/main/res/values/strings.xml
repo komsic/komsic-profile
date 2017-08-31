@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">KomsicProfilePage</string>
+
+    <string name="bio"><b><i>Bio</i></b></string>
+
+    <string name="bio_detail">Micheal is a 500 level student of Electrical and Electronics
+        Engineering in Federal University of Agriculture, Abeokuta. He\'s passionate about
+        technology and one his life goals is to become a World Class Full Stack Android Developer.
+        \nMicheal enjoys watching TV series, playing soccer games, reading novels (hates romantic
+        genre), and meditating. He used to be a fanatic football fan until Arsenal FC broke
+        his heart.</string>
+
+    <string name="mail_enquiry">You can mail me.</string>
+
+    <string name="enquiry">Got a question?</string>
+
+    <string name="phone_enquiry">Or give a call.</string>
+
+    <string name="name">KAYODE, Micheal O.</string>
+
+    <string name="message">Message</string>
+
+    <string name="send">Send</string>
+
+    <string name="admin_email">xyluz@ymail.com</string>
+
+    <string name="email">kayodemicheal159@gmail.com</string>
+
+    <string name="github_link">https://github.com/komsic</string>
+
+    <string name="slack_link">https://hnginterns.slack.com/team/komsic</string>
+
+    <string name="twitter_link">https://twitter.com/koms4mic</string>
+
+    <string name="phone_no">08130867594</string>
+
+</resources>

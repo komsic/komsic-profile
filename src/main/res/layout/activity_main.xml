@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fb8c00"
+    tools:context="com.example.dell.komsicprofilepage.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <View
+                android:id="@+id/dummy_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/komsic"
+                android:layout_below="@id/dummy_top_view"/>
+
+            <View
+                android:id="@+id/dummy_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_below="@id/profile_pic"/>
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:background="#45ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/dummy_bottom_view"
+
+                android:textColor="#000"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:layout_marginTop="4dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/github_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/github_logo"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:id="@+id/slack_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/slack_logo"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:id="@+id/twitter_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/twitter_logo"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/bio_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:textColor="#000"
+                android:textStyle="bold|italic"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bio_detail"
+                android:textColor="#000"
+                android:textAppearance="?android:textAppearanceSmall"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_marginTop="4dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/contact_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enquiry"
+                android:textColor="#000"
+                android:textStyle="bold|italic"
+                android:layout_marginBottom="4dp"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <RelativeLayout
+                android:id="@+id/mail_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginBottom="8dp"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mail_enquiry"
+                    android:textColor="#000"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <ImageView
+                    android:id="@+id/mail_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="4dp"
+                    android:src="@drawable/mail_logo"
+                    android:background="@drawable/circle_background"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="end"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phone_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_enquiry"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <ImageView
+                    android:id="@+id/phone_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="4dp"
+                    android:background="@drawable/circle_background"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/phone_logo"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
